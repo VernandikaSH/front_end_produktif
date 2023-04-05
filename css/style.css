@@ -1,0 +1,217 @@
+:root {
+  --kuningHimatif: #fcd517;
+  --abuHimatif: #393936;
+  --putihHimatif: #fefefe;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--abuHimatif);
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--kuningHimatif);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.header-logo {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  padding-left: 60px;
+}
+
+.header-logo img {
+  height: 40px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.header-logo h2 {
+  padding-left: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.header-login {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  padding-right: 60px;
+  gap: 10px;
+}
+
+.header-login a {
+  font-size: 15px;
+  display: block;
+  background-color: var(--abuHimatif);
+  align-self: center;
+  padding: 1px 15px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.header-login a:hover {
+  color: var(--kuningHimatif);
+  padding: 2px 16px;
+}
+
+.header-login-outer {
+  background-image: url("../img/logo-org.png");
+  background-size: 40px 40px;
+  background-color: white;
+  background-position-x: center;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  border: 2px solid #000;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.category {
+  width: 100%;
+  padding: 100px 0 50px;
+  background-color: var(--putihHimatif);
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category-box {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.category-box a {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  align-self: center;
+  background-color: var(--abuHimatif);
+  padding: 5px 0;
+  cursor: pointer;
+  top: 80px;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: 200ms;
+}
+
+.category-box a:hover {
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: -3px 2px 2px #000;
+}
+
+.category-box:nth-child(1) {
+  background-image: url(../img/himatif-database.jpg);
+}
+
+.category-box:nth-child(2) {
+  background-image: url(../img/keilmuan.jpg);
+}
+
+.category-box:nth-child(3) {
+  background-image: url(../img/kkmTI.jpg);
+}
+
+.category-box:nth-child(4) {
+  background-image: url(../img/unity.jpg);
+}
+
+.category-box:nth-child(5) {
+  background-image: url(../img/magang.jpg);
+}
+
+.footer-main {
+  background-color: var(--abuHimatif);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-main-box {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-main a img {
+  background-color: var(--putihHimatif);
+  align-self: right;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+@media (max-width: 400px) {
+  .header-logo h2 {
+    padding-left: 7px;
+    font-size: 20px;
+  }
+
+  .header-logo img {
+    height: 32px;
+  }
+
+  .header-login a {
+    padding: 1px 13px;
+  }
+
+  .header-login-outer {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-login-outer img {
+    height: 32px;
+  }
+
+  .category-box {
+    width: 255px;
+    height: 340px;
+  }
+
+  .footer-main-box p {
+    font-size: 12px;
+  }
+
+  .footer-main a img {
+    width: 35px;
+  }
+
+  .footer-main a img {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 1630px) {
+  .category {
+    height: 100vh;
+  }
+}
